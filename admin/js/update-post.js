@@ -28,14 +28,15 @@ async function updatePost(){
     });
     
 }
-//Retrieve data from form enteard element
+//Looping all data from form element and retrieve Keys and Values
 function AllData(form) {
     let obj = {};
     let formData = new FormData(form);
     
     for (let key of formData.keys()) {
         //console.log(key);
-        let inputData = formData.getAll(key);
+        //'key' === key value('title','author','content' etc)
+        let inputData = formData.getAll(key); // Get value of form (users input value)
         //console.log(inputData);
 
         if (inputData.length > 1) {

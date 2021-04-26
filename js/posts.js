@@ -19,7 +19,7 @@ async function fetchAllPosts(){
             <li>
                 <h3>${x.title}</h3>
                 <p>Posted by ${x.author} / ${dateFormat(time)}</p><br>
-                <p>${shortText}... <a href="post.html?id=${x['_id']}">Read More</a>
+                <p>${shortText}... <a href="post.html?id=${x['_id']}">Read More</a><br>
                 <i>Tags: ${x.tags}</i></p>
             </li>
             <hr>

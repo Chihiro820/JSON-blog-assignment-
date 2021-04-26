@@ -10,12 +10,14 @@ async function admin() {
     
     let postList = '';
     for (let post of posts) {
+     //Time function
+      let time = new Date(post.date)
       postList += `
         <tr>
           <td>${post.title}</td>
           <td>${post.author}</td>
           <td>${post.tags}</td>
-          <td>${post.date}</td>
+          <td>${dateFormat(time)}</td>
           <td><a href="update-post.html?id=${post._id}">Update</a>|<a href="#" class="delete-post-link" data-id="${post['_id']}">Delete</a></td>
         </tr>
       `;
@@ -58,7 +60,11 @@ function deletePostEvent() {
     })
   }
 }
-
+// Format created date and time
+function dateFormat(time){
+    let month =['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+    return `${time.getFullYear()} ${time.getDate()} ${month[time.getMonth()]}  ${time.getHours()}:${time.getMinutes()}`
+}
 /* ●admin/index.html○A link at the top of the page, which navigates tothe blog page, ie toindex.html
 ○Button/link that navigates toadmin/create-post.html○
 A list of all posts displayed in a table <table>
