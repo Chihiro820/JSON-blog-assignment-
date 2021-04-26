@@ -1,0 +1,71 @@
+/* Global styles*/
+body {
+    width: 1200px;
+    display: block;
+    margin: auto;
+}
+
+/** Font styles **/
+* {
+    font-family: open sans;
+}
+
+h1 {
+    text-align: center;
+    ;
+}
+
+
+/** Link styling**/
+a {
+    color: #0077aa;
+    font-weight: 600;
+}
+
+.nav {
+    text-align: right;
+}
+
+input,
+textarea,
+input {
+    width: 100%;
+}
+
+form {
+    width: 50%;
+    margin: 10% 25%;
+}
+
+.multiple {
+    font-size: small;
+    color: red;
+}
+
+select {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/** Styling table **/
+table {
+    margin-top: 30px;
+    display: block;
+    width: 700px;
+    margin: auto;
+}
+
+thead {
+    display: block;
+}
+
+tr {
+    background-color: gray;
+
+}
+
+th {
+    padding: 5px 20px;
+}
