@@ -1,14 +1,60 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create post page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work Sans:100,200,300,400,500,600,700,900" rel="stylesheet">
 </head>
+
 <body>
-    
-    <h1>Create a post</h1>  
-    <a href="index.html">Back</a>
+    <nav class="update_nav">
+        <img src="../YMCA-logo4.png" alt="EPIC LOGO" class="logo">
+        
+            <a href="index.html">← Back</a>
+        </div>
+    </nav>
+    <div class="content1">
+        <div class="hedding-style">
+            <h1>Create a post</h1>
+        </div>
+    <div class="form-div">
+        <form id="createPostForm">
+            <label for="">Title:</label>
+            <input type="text" id="titleInput" name="title">
+
+            <label for="">Author:</label>
+            <input type="text" id="authorInput" name="author">
+            <textarea name="content" id="contentTextarea" cols="30" rows="10"></textarea>
+
+
+
+            <label for="">Choose tags:</label>
+
+            <select name="tags" id="tagsz" size="5" multiple>
+                <option  class="tagselector" value="Sport" name="sport">Sport</option>
+                <option  class="tagselector" value="Art" name="art">Art</option>
+                <option  class="tagselector" value="Politic"  name="politic">Politic</option>
+                <option class="tagselector" value="Hobby" name="hobby">Hobby</option>
+                <option class="tagselector" value="Food" name="food">Food</option>
+            </select><br>
+            <span class="multiple">*Hold down the Ctrl (windows) or Command (Mac) button to select multiple
+                    options.</span><br><br>
+            <input class="submitbutton" type="submit" value="Create post"> 
+      
+
+        </form>
+     </div>
+    </div>
+
+
+
+
+
+
+
     <script src="js/create-post.js"></script>
 </body>
+
 </html>

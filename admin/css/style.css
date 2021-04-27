@@ -1,35 +1,96 @@
 /* Global styles*/
 body {
-    width: 1200px;
+
     display: block;
     margin: auto;
 }
 
-/** Font styles **/
-* {
-    font-family: open sans;
+.content1 {
+    width: 800px;
+    margin: auto;
 }
 
-h1 {
-    text-align: center;
-    ;
+/* Topbar for heading */
+.hedding-style {
+    background-color: #ECB14B;
 }
 
+/** Navbar **/
+nav {
+    height: 200px;
+    background-color: #83C4C0;
+}
+
+nav a {
+    padding: 30px;
+}
+
+/* Links in navbar*/
+.update_nav {
+    text-align: right;
+    padding: 3%;
+    font-size: 30px;
+}
 
 /** Link styling**/
 a {
     color: #0077aa;
-    font-weight: 600;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.nav {
-    text-align: right;
+a:hover {
+    text-decoration: underline;
 }
 
+a:visited {
+    color: #0077aa;
+}
+
+a:active {
+    color: #0077aa;
+}
+
+/** Font styles **/
+* {
+    font-family: work sans;
+}
+
+h1 {
+    text-align: left;
+    padding: 30px;
+    color: white;
+    margin: auto;
+    width: 800px;
+    margin-top: -80px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+form {
+    width: 80% !important;
+    margin: auto !important;
+}
+
+.form-div {
+    background-color: #F2F3F5;
+    padding: 16px 0 100px 0;
+}
+
+.create-btn {
+    padding: 30px;
+    display: block;
+}
+
+
+
+/** Input fields for creating posts **/
 input,
-textarea,
-input {
+textarea {
     width: 100%;
+    margin-bottom: 2%;
 }
 
 form {
@@ -48,17 +109,19 @@ select {
 }
 
 
-
-/** Styling table **/
+/** Styling table for list of posts (admin view)**/
 table {
     margin-top: 30px;
-    display: block;
     width: 700px;
     margin: auto;
 }
 
-thead {
-    display: block;
+table {
+    text-align: center;
+}
+
+td {
+    padding: 10px;
 }
 
 tr {
@@ -68,4 +131,105 @@ tr {
 
 th {
     padding: 5px 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+table {
+    background-color: black;
+    border-collapse: separate;
+    margin-top: -10px;
+}
+
+thead {
+    background-color: white;
+}
+
+
+
+
+
+/* Post lists */
+
+li,
+article {
+    list-style-type: none;
+    padding: 30px;
+    -webkit-box-shadow: 5px 5px 15px 5px #00000057;
+    box-shadow: 5px 5px 15px 5px #00000057;
+    background-color: white;
+
+
+    margin-bottom: 40px;
+}
+
+li h3 {
+    text-transform: capitalize;
+}
+
+li a,
+article a {
+    display: block;
+    margin-top: 30px;
+}
+
+article {
+    margin-top: 20px;
+}
+
+.author-and-date {
+    font-size: 13px;
+}
+
+.author-and-date span {
+    color: #f1a116;
+    font-weight: 600;
+}
+
+.list-item-tags span {
+    color: rgb(48, 48, 48);
+    font-style: italic;
+    font-weight: 400;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#content1-id {
+    width: 1000px;
+    background: white;
+}
+
+#content1-id h1 {
+    padding: 30px 0;
+    margin-left: 20px;
+}
+
+#form-div-id {
+    background-color: white;
+    margin-top: 15px;
+}
+
+
+
+input[type=submit] {
+    background-color: #2d9097;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.logo {
+    display: inline;
+    float: left;
+    width: 300px;
 }

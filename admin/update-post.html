@@ -1,29 +1,49 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work Sans:100,200,300,400,500,600,700,900" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Update Post</h1>
-    <form id="update-post" >
-        Title:<input type="text" id="title" name="title" required>
-        Author:<input type="text" id="author" 
-        name="author"required>
-        <textarea  id="content" name="content"cols="30" rows="10" required></textarea>
-        Choose tags:<br>
-        <select name="tags" id="tags" multiple required>
-            <option value="Sport">Sport</option>
-            <option value="Art">Art</option>
-            <option value="Politc">Politic</option>
-            <option value="Hobby">Hobby</option>
-            <option value="Food">Food</option>
-        </select><br><br>
-         <span class="multiple">*Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</span><br><br>
-        <input type="submit" value="Post"><br>
-        <a href="index.html">Back to admin page</a>
-    </form>
+    <nav class="update_nav">
+
+     
+            <img src="../YMCA-logo4.png" alt="EPIC LOGO" class="logo">
+            <a href="..//index.html">Home</a>|<a href="./index.html">Admin</a>
+        </div>
+    </nav>
+    <div class="content1">
+        <div class="hedding-style">
+            <h1>Update Post</h1>
+        </div>    
+        <div class="form-div">
+            <form id="update-post">
+                 <label for="">Title:</label>
+                 <input type="text" id="title" name="title" required>
+                 <label for="">Author:</label>
+                 <input type="text" id="author" name="author" required>
+                <textarea id="content" name="content" cols="30" rows="10" required></textarea>
+                <label for="">Choose tags:</label>
+                <select name="tags" id="tags" multiple size="5" required>
+                    <option value="Sport">Sport</option>
+                    <option value="Art">Art</option>
+                    <option value="Politc">Politic</option>
+                    <option value="Hobby">Hobby</option>
+                    <option value="Food">Food</option>
+                </select>
+                <span class="multiple">*Hold down the Ctrl (windows) or Command (Mac) button to select multiple
+                    options.</span><br><br>
+                <input class="submitbutton" type="submit" value="Update post"><br>
+             
+            </form>
+        </div>
+    </div>
+
     <script src="js/update-post.js"></script>
 </body>
+
 </html>

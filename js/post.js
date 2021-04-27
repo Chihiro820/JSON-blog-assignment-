@@ -15,11 +15,10 @@ async function fetchPost() {
     
     document.getElementById('post-content').innerHTML = `
       <h3>${post.title}</h3>
-      <p>Post by ${post.author} / ${dateFormat(time)}</p><br>
-      <p>${post.content}<br>
-      <i>Tags: ${post.tags}</i></p>
-    `;
-
+      <p class="author-and-date">Post by <span>${post.author}</span> / ${dateFormat(time)}</p><br>
+      <p>${post.content}<br><br>
+      <p class="list-item-tags">Tags:<span> ${post.tags}</span></p>
+    `; 
     
   } catch (error) {
     console.log(error);

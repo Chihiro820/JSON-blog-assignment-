@@ -18,11 +18,11 @@ async function fetchAllPosts(){
         data +=`
             <li>
                 <h3>${x.title}</h3>
-                <p>Posted by ${x.author} / ${dateFormat(time)}</p><br>
-                <p>${shortText}... <a href="post.html?id=${x['_id']}">Read More</a><br>
-                <i>Tags: ${x.tags}</i></p>
+                <p class="author-and-date">Posted by <span>${x.author}</span> / ${dateFormat(time)}</p><br>
+                <p>${shortText}... <a href="post.html?id=${x['_id']}">Read More</a><br><br>
+                <p class="list-item-tags">Tags:<span> ${x.tags}</span></p>
             </li>
-            <hr>
+           
         `
         } 
         document.getElementById('content').innerHTML=data;
